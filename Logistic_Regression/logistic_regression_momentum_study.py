@@ -10,7 +10,7 @@ y: 1 if participant switched behavior on current trial relative
 to behavior on previous trial, 0 if stayed with the same behavior
 
 X: design matrix contains (1) an intercept (2) outcome on the last trial,
-(3) tally of #outcomes into past for non-chosen rock
+(3) tally of #outcomes into past for non-chosen rock and interaction of (2) and (3)
 
 INPUT: .csv files with behavioral data, including what the participant chose
 Column 1: (option 1 or 2 on a 2-armed bandit)
