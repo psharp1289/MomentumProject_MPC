@@ -35,16 +35,17 @@ outcome_prob_volatile=[0.4,0.6] #probability of punishment in a volatile environ
 outcome_val=-1 #punishment due to aversive learning task
 arms=2 #number of bandits
 shifts=3 #number of shifts
+num_subjects=75 #number of simulated subjects to-be-generated
 
 #Paths to types of simulations defined above
-path_to_1='/home/paulsharp/Documents/projects/Eran_MomentumModelAnxiousMood_2018/Behavioral_Data/analyses_and_data/simulations/moodyRL_momentum'
-path_to_2='/home/paulsharp/Documents/projects/Eran_MomentumModelAnxiousMood_2018/Behavioral_Data/analyses_and_data/simulations/standardRL_momentum'
-path_to_3='/home/paulsharp/Documents/projects/Eran_MomentumModelAnxiousMood_2018/Behavioral_Data/analyses_and_data/simulations/moodyRL_volatility'
-path_to_4='/home/paulsharp/Documents/projects/Eran_MomentumModelAnxiousMood_2018/Behavioral_Data/analyses_and_data/simulations/standardRL_volatility'
+path_to_1='/home/moodyRL_momentum'
+path_to_2='/home/standardRL_momentum'
+path_to_3='/home/moodyRL_volatility'
+path_to_4='/home/standardRL_volatility'
 
 #iterate through subjects, create all simulated data
 
-for subject in range(75):
+for subject in range(num_subjects):
     lrv_sub=lrv[subject]
     lrm_sub=lrm[subject]
     invtemp_sub=invtemp[subject]
